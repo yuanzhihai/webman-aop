@@ -4,7 +4,7 @@ composer require yzh52521/webman-aop
 ```
 在根目录增加define.php
 ```
-use aop\ClassLoader;
+use yzh52521\aop\ClassLoader;
 
 $appConfig = config('app');
 if (isset($appConfig['default_timezone'])) {
