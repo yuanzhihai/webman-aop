@@ -102,7 +102,7 @@ UserAspect after
 #切入顺序
 如果有多个切面类对同一个类方法进行切入， 会按照配置文件中顺序执行
 
-load 函数在 helpers.php 定义如下 eg:
+容器 load 函数在 helpers.php 定义如下 eg:
 ```
 /**
  *  加载容器的对象
