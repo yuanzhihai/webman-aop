@@ -1,0 +1,22 @@
+{
+  "name": "yzh52521/webman-aop",
+  "description": "aop aspect 切片 for the webman",
+  "keywords": ["aop", "aspect", "切片"],
+  "type": "library",
+  "require": {
+    "php": ">=7.2",
+    "nikic/php-parser": "^4.10.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "yzh52521\\aop\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "yzh52521",
+      "email": "396751927@qq.com"
+    }
+  ]
+}
