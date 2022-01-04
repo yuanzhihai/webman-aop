@@ -26,9 +26,6 @@ require_once __DIR__ . '/define.php';
 ```
 <?php
 return [
-    'span'   => [
-        'paths' => BASE_PATH . '/app',
-    ],
     'aspect' => [
         \app\aspect\UserAspect::class,
     ],
@@ -81,7 +78,7 @@ class UserAspect extends AbstractAspect
 }
 ```
 
-测试,在app\controller\Index 修改代码 eg：
+测试,在app\controller\Index 控制器修改代码：
 
 ```
 
