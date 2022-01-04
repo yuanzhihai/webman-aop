@@ -22,7 +22,7 @@ require_once __DIR__ . '/define.php';
 ```
 
 增加 AOP 相关配置
-我们需要在 config 目录下，增加 cop.php 配置
+我们需要在 config 目录下，增加 aop.php 配置
 ```
 <?php
 return [
