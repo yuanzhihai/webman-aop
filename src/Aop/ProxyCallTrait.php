@@ -1,6 +1,6 @@
 <?php
 
-namespace yzh52521\aop;
+namespace yzh52521\aop\Aop;
 
 /**
  * Trait ProxyCallTrait.

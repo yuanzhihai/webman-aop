@@ -1,8 +1,8 @@
 <?php
 
-namespace yzh52521\aop;
+namespace yzh52521\aop\Aop;
 
-use yzh52521\aop\interfaces\ProceedingJoinPointInterface;
+use yzh52521\aop\Aop\interfaces\ProceedingJoinPointInterface;
 
 /**
  * Class PipeLine.

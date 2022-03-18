@@ -1,6 +1,6 @@
 <?php
 
-namespace yzh52521;
+namespace yzh52521\aop;
 
 class Install
 {
@@ -10,7 +10,7 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/yzh52521/aop' => 'config/plugin/yzh52521/aop',
+        'config/plugin/yzh52521/Aop' => 'config/plugin/yzh52521/Aop',
     );
 
     /**

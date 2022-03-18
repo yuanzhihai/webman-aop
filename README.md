@@ -44,8 +44,8 @@ class UserService
 namespace app\aspect;
 
 use app\service\UserService;
-use yzh52521\aop\AbstractAspect;
-use yzh52521\aop\interfaces\ProceedingJoinPointInterface;
+use yzh52521\aop\Aop\AbstractAspect;
+use yzh52521\aop\Aop\interfaces\ProceedingJoinPointInterface;
 
 /**
  * Class UserAspect

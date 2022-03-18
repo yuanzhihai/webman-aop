@@ -1,9 +1,9 @@
 <?php
 
-namespace yzh52521\aop;
+namespace yzh52521\aop\Aop;
 
 use Composer\Autoload\ClassLoader;
-use yzh52521\aop\exception\ParseException;
+use yzh52521\aop\Aop\exception\ParseException;
 
 /**
  * Class ProxyClasses.

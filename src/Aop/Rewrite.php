@@ -1,11 +1,6 @@
 <?php
-/**
- * This file is part of monda-worker.
- *
- * @contact  mondagroup_php@163.com
- *
- */
-namespace yzh52521\aop;
+
+namespace yzh52521\aop\Aop;
 
 use PhpParser\NodeTraverser;
 use PhpParser\Parser;

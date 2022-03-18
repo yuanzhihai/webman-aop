@@ -1,14 +1,8 @@
 <?php
-/**
- * This file is part of monda-worker.
- *
- * @contact  mondagroup_php@163.com
- *
- */
-namespace yzh52521\aop;
+namespace yzh52521\aop\Aop;
 
-use yzh52521\aop\exception\ConfigException;
-use yzh52521\aop\interfaces\ProxyInterface;
+use yzh52521\aop\Aop\exception\ConfigException;
+use yzh52521\aop\Aop\interfaces\ProxyInterface;
 
 class Config
 {
@@ -18,7 +12,7 @@ class Config
 
     private $aspectsClasses = [];
 
-    private $path = BASE_PATH.'/runtime/aop/aopProxyClasses';
+    private $path = BASE_PATH.'/runtime/Aop/aopProxyClasses';
 
     public function __construct(array $config = [])
     {
@@ -52,7 +46,7 @@ class Config
         if (isset($this->config['scans']) && is_array($this->config['scans'])) {
             foreach ($this->config['scans'] as $dir => $namespace) {
                 if (! is_string($dir) || ! is_string($namespace)) {
-                    throw new ConfigException('aop config err: config with key : scans');
+                    throw new ConfigException('Aop config err: config with key : scans');
                 }
                 $this->recursiveScan($dir, $namespace);
             }
@@ -105,11 +99,11 @@ class Config
         if (! empty($path)) {
             try {
                 if (! file_exists($path) && ! mkdir($path, 0766, true) && ! is_dir($path)) {
-                    throw new ConfigException('can not create aop proxy directory: ' . $path);
+                    throw new ConfigException('can not create Aop proxy directory: ' . $path);
                 }
                 $this->path = $path;
             } catch (\Exception $exception) {
-                throw new ConfigException('can not create aop proxy directory: ' . $path);
+                throw new ConfigException('can not create Aop proxy directory: ' . $path);
             }
         }
     }

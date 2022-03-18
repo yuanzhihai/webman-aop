@@ -1,15 +1,9 @@
 <?php
-/**
- * This file is part of monda-worker.
- *
- * @contact  mondagroup_php@163.com
- *
- */
 
-namespace yzh52521\aop;
+namespace yzh52521\aop\Aop;
 
-use yzh52521\aop\interfaces\ProceedingJoinPointInterface;
-use yzh52521\aop\interfaces\ProxyInterface;
+use yzh52521\aop\Aop\interfaces\ProceedingJoinPointInterface;
+use yzh52521\aop\Aop\interfaces\ProxyInterface;
 
 /**
  * Class AbstractAspect.
