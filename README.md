@@ -7,7 +7,7 @@ composer require yzh52521/webman-aop
 ```
 ………………………………
 //aop
-ClassLoader::reload(config('aop'));
+ClassLoader::reload(config('plugin/yzh52521/aop/app'));
 ClassLoader::init();
 
 Worker::runAll();
