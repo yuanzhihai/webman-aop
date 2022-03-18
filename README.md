@@ -15,7 +15,7 @@ Worker::runAll();
 ```
 
 AOP 相关配置
-config/plugin/yzh52521/app.php 配置
+config/plugin/yzh52521/aop/app.php 配置
 ```
 <?php
 return [
