@@ -2,33 +2,23 @@
 ```
 composer require yzh52521/webman-aop
 ```
-在根目录增加define.php
-```
-use yzh52521\aop\ClassLoader;
 
-$appConfig = config('app');
-if (isset($appConfig['default_timezone'])) {
-    date_default_timezone_set($appConfig['default_timezone']);
-}
+在start.php文件
+```
+………………………………
 //aop
 ClassLoader::reload(config('aop'));
 ClassLoader::init();
-```
 
-在start.php文件下引入 define.php
-```
-require_once __DIR__ . '/define.php';
+Worker::runAll();
 
 ```
 
-增加 AOP 相关配置
-我们需要在 config 目录下，增加 cop.php 配置
+AOP 相关配置
+config/plugin/yzh52521/app.php 配置
 ```
 <?php
 return [
-    'span'   => [
-        'paths' => BASE_PATH . '/app',
-    ],
     'aspect' => [
         \app\aspect\UserAspect::class,
     ],
@@ -110,7 +100,7 @@ UserAspect after
 if (! function_exists('load')) {
     function load(string $class)
     {
-        return \support\Container::instance()->get($class);
+        return \support\Container::get($class);
     }
 }
 ```
