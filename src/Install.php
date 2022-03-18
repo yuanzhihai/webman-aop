@@ -44,7 +44,6 @@ class Install
                     mkdir($parent_dir, 0777, true);
                 }
             }
-            //symlink(__DIR__ . "/$source", base_path()."/$dest");
             copy_dir(__DIR__ . "/$source", base_path() . "/$dest");
         }
     }
@@ -60,9 +59,6 @@ class Install
             if (!is_dir($path) && !is_file($path)) {
                 continue;
             }
-            /*if (is_link($path) {
-                unlink($path);
-            }*/
             remove_dir($path);
         }
     }
