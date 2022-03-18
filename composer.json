@@ -1,6 +1,6 @@
 {
   "name": "yzh52521/webman-aop",
-  "description": "aop aspect 切片 for the webman",
+  "description": "aop aspect 切片 for the webman plugin",
   "keywords": ["aop", "aspect", "切片"],
   "type": "library",
   "require": {
