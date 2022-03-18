@@ -22,10 +22,13 @@ require_once __DIR__ . '/define.php';
 ```
 
 增加 AOP 相关配置
-我们需要在 config 目录下，增加 aop.php 配置
+我们需要在 config 目录下，增加 cop.php 配置
 ```
 <?php
 return [
+    'span'   => [
+        'paths' => BASE_PATH . '/app',
+    ],
     'aspect' => [
         \app\aspect\UserAspect::class,
     ],
@@ -78,7 +81,7 @@ class UserAspect extends AbstractAspect
 }
 ```
 
-测试,在app\controller\Index 控制器修改代码：
+测试,在app\controller\Index 修改代码 eg：
 
 ```
 

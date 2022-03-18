@@ -10,7 +10,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "yzh52521\\aop\\": "src/"
+      "yzh52521\\": "src/"
     }
   },
   "authors": [
