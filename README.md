@@ -3,17 +3,6 @@
 composer require yzh52521/webman-aop
 ```
 
-在start.php文件
-```
-………………………………
-//aop
-ClassLoader::reload(config('plugin/yzh52521/aop/app'));
-ClassLoader::init();
-
-Worker::runAll();
-
-```
-
 AOP 相关配置
 config/plugin/yzh52521/aop/app.php 配置
 ```

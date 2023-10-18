@@ -56,8 +56,8 @@ class ClassLoader
     {
         foreach (self::$proxyClasses as $proxyClass => $class) {
             $instance = new $proxyClass();
-            Container::instance()->set($class[1], $instance);
-            Container::instance()->set($proxyClass, $instance);
+            Container::set($class[1], $instance);
+            Container::set($proxyClass, $instance);
         }
     }
 
